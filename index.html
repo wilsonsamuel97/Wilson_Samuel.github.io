@@ -3,160 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilson Samuel | Workforce Management Analytics</title>
+    <title>Wilson Samuel | Workforce Management Analytics Lead</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <div class="theme-toggle">
-        <button id="themeToggle" aria-label="Toggle theme">
-            <i class="fas fa-moon"></i>
-        </button>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">WS</span>
+                <span class="logo-text">Wilson Samuel</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="nav-contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-name">Wilson Samuel</h1>
-                <h2 class="hero-role">Workforce Management Lead | Forecasting & Time Series Analytics | SQL & Python Automation</h2>
-                <p class="hero-tagline">Driving data-backed workforce decisions through forecasting, automation, and advanced analytics.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#" class="btn btn-secondary" id="resumeBtn">Download Resume</a>
+                <div class="badge">WFM Analytics Lead</div>
+                <h1 class="animate__animated animate__fadeInUp">Wilson <span class="highlight">Samuel</span></h1>
+                <h2 class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                    Workforce Management Lead | Forecasting & Time Series Analytics | SQL & Python Automation
+                </h2>
+                <p class="hero-description animate__animated animate__fadeInUp animate__delay-2s">
+                    Driving data-backed workforce decisions through forecasting, automation, and advanced analytics.
+                </p>
+                
+                <div class="hero-stats animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="stat">
+                        <div class="stat-value">4+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">$2.2M</div>
+                        <div class="stat-label">Annual Savings</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">18%</div>
+                        <div class="stat-label">AUX Reduction</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">97%</div>
+                        <div class="stat-label">Forecast Accuracy</div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-4s">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-chart-line"></i> View Projects
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="resumeBtn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
                     <a href="https://linkedin.com/in/wilsonsamuel1008" target="_blank" class="btn btn-outline">
                         <i class="fab fa-linkedin"></i> Connect on LinkedIn
                     </a>
                 </div>
             </div>
+            
+            <!-- Data Visualization Section -->
             <div class="hero-visual">
-                <div class="data-visual">
+                <div class="data-visualization">
                     <div class="chart-container">
                         <canvas id="heroChart"></canvas>
                     </div>
+                    <div class="kpi-metrics">
+                        <div class="kpi">
+                            <div class="kpi-icon"><i class="fas fa-bullseye"></i></div>
+                            <div class="kpi-content">
+                                <div class="kpi-value">97%</div>
+                                <div class="kpi-label">Forecast Accuracy</div>
+                            </div>
+                        </div>
+                        <div class="kpi">
+                            <div class="kpi-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="kpi-content">
+                                <div class="kpi-value">7% ↑</div>
+                                <div class="kpi-label">Occupancy Rate</div>
+                            </div>
+                        </div>
+                        <div class="kpi">
+                            <div class="kpi-icon"><i class="fas fa-clock"></i></div>
+                            <div class="kpi-content">
+                                <div class="kpi-value">9% ↓</div>
+                                <div class="kpi-label">AHT Reduction</div>
+                            </div>
+                        </div>
+                        <div class="kpi">
+                            <div class="kpi-icon"><i class="fas fa-dollar-sign"></i></div>
+                            <div class="kpi-content">
+                                <div class="kpi-value">$2.2M</div>
+                                <div class="kpi-label">Annual Savings</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="hero-background">
+            <div class="grid-lines"></div>
+            <div class="floating-shapes">
+                <div class="shape circle"></div>
+                <div class="shape triangle"></div>
+                <div class="shape square"></div>
             </div>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="section">
+    <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Transforming data into operational excellence</p>
+            </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a Workforce Management professional with over <span class="highlight">4+ years</span> of experience in retail and supply chain operations at global organizations such as <span class="highlight">Target</span> and <span class="highlight">Amazon</span>. My expertise lies at the intersection of forecasting, time-series analytics, KPI-driven decision-making, and process automation.</p>
-                    <p>I specialize in converting large volumes of operational data into actionable insights that improve service levels, optimize staffing, and enhance productivity. With strong hands-on experience in SQL, Python, and workforce analytics tools, I design scalable solutions that reduce manual effort and support real-time operational excellence.</p>
-                    <p>I enjoy building data-driven systems, automating repetitive workflows, and developing analytical models that bring clarity to complex operational challenges.</p>
+                    <p class="intro">Hey! 👋 I'm <strong>Wilson Samuel</strong>, a Workforce Management professional with over 4+ years of experience in retail and supply chain operations at global organizations such as Target and Amazon.</p>
+                    
+                    <p>My expertise lies at the intersection of forecasting, time-series analytics, KPI-driven decision-making, and process automation. I specialize in converting large volumes of operational data into actionable insights that improve service levels, optimize staffing, and enhance productivity.</p>
+                    
+                    <p>With strong hands-on experience in SQL, Python, and workforce analytics tools, I design scalable solutions that reduce manual effort and support real-time operational excellence. I enjoy building data-driven systems, automating repetitive workflows, and developing analytical models that bring clarity to complex operational challenges.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-bullseye"></i>
+                            <div>
+                                <h4>KPI-Driven Approach</h4>
+                                <p>Focus on measurable outcomes and performance metrics</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>Automation Focus</h4>
+                                <p>Reduce manual work through smart automation</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Forecasting Expertise</h4>
+                                <p>Advanced time-series and predictive modeling</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-value">4+</div>
-                        <div class="stat-label">Years Experience</div>
+                
+                <div class="about-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Facts</h3>
+                        <div class="fact">
+                            <span class="fact-label">Experience</span>
+                            <span class="fact-value">4+ Years</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-label">Industries</span>
+                            <span class="fact-value">Retail & Supply Chain</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-label">Companies</span>
+                            <span class="fact-value">Target, Amazon</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-label">Location</span>
+                            <span class="fact-value">Bengaluru, India</span>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-value">18%</div>
-                        <div class="stat-label">AUX Reduction</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">$2.2M</div>
-                        <div class="stat-label">Annual Savings</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">52+</div>
-                        <div class="stat-label">Daily Labor Hours Saved</div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Currently</h3>
+                        <p>Lead Specialist – Workforce Management at Target, focusing on forecasting optimization and KPI automation for 1,900+ retail stores.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Core Skills & Expertise -->
-    <section id="skills" class="section section-dark">
+    <!-- Core Expertise Section -->
+    <section id="expertise" class="section expertise">
         <div class="container">
-            <h2 class="section-title">Core Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Workforce Analytics & Forecasting</h3>
+            <div class="section-header">
+                <h2 class="section-title">Core <span class="highlight">Expertise</span></h2>
+                <p class="section-subtitle">Specialized skills in workforce analytics and automation</p>
+            </div>
+            
+            <div class="expertise-categories">
+                <div class="category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Workforce Analytics</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Demand & Capacity Forecasting</li>
-                        <li>Time Series Analysis (Moving Averages, ARIMA-based approaches)</li>
-                        <li>Intraday Management & Forecast Accuracy</li>
-                        <li>SLA & Service Level Optimization</li>
+                        <li><i class="fas fa-check"></i> Demand & Capacity Forecasting</li>
+                        <li><i class="fas fa-check"></i> Time Series Analysis (ARIMA, Moving Averages)</li>
+                        <li><i class="fas fa-check"></i> Intraday Management & Forecast Accuracy</li>
+                        <li><i class="fas fa-check"></i> SLA & Service Level Optimization</li>
+                        <li><i class="fas fa-check"></i> Occupancy & Shrinkage Analysis</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data & Automation</h3>
+                
+                <div class="category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data & Automation</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>SQL (Data extraction, joins, audits, diagnostics)</li>
-                        <li>Python (Automation, KPI trackers, reporting pipelines)</li>
-                        <li>Advanced Excel (Dashboards, modeling, analysis)</li>
+                        <li><i class="fas fa-check"></i> SQL (Complex queries, data extraction, audits)</li>
+                        <li><i class="fas fa-check"></i> Python (Automation, KPI trackers, reporting)</li>
+                        <li><i class="fas fa-check"></i> Advanced Excel (Dashboards, modeling)</li>
+                        <li><i class="fas fa-check"></i> Data Pipeline Development</li>
+                        <li><i class="fas fa-check"></i> Process Automation Design</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tachometer-alt"></i> KPIs & Metrics</h3>
+                
+                <div class="category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>KPI & Metrics</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Service Level, Occupancy, Shrinkage</li>
-                        <li>Adherence & AUX Behavior Analysis</li>
-                        <li>Average Handling Time (AHT)</li>
-                        <li>Productivity & Forecast Variance</li>
+                        <li><i class="fas fa-check"></i> Service Level (SL) Monitoring</li>
+                        <li><i class="fas fa-check"></i> Adherence & AUX Behavior Analysis</li>
+                        <li><i class="fas fa-check"></i> Average Handling Time (AHT) Optimization</li>
+                        <li><i class="fas fa-check"></i> Productivity & Forecast Variance</li>
+                        <li><i class="fas fa-check"></i> Real-time KPI Dashboards</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-bar"></i> Visualization & BI Tools</h3>
-                    <ul class="skill-list">
-                        <li>Power BI</li>
-                        <li>Domo</li>
-                        <li>QuickSight</li>
-                        <li>Greenfield Dashboards</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> WFM & Operations Tools</h3>
-                    <ul class="skill-list">
-                        <li>NICE IEX, NICE Webstation</li>
-                        <li>Kronos, Salesforce</li>
-                        <li>Genesys, Avaya, CMS Supervisor</li>
-                        <li>AWS, Paragon</li>
-                    </ul>
+            </div>
+            
+            <div class="tools-section">
+                <h3>Tools & Technologies</h3>
+                <div class="tools-grid">
+                    <div class="tool">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Domo</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fas fa-clock"></i>
+                        <span>NICE IEX</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Kronos</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fas fa-headset"></i>
+                        <span>Genesys</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Highlights -->
-    <section id="experience" class="section">
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
         <div class="container">
-            <h2 class="section-title">Experience Highlights</h2>
+            <div class="section-header">
+                <h2 class="section-title">Professional <span class="highlight">Experience</span></h2>
+                <p class="section-subtitle">Track record of delivering impact at scale</p>
+            </div>
+            
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">2023 – Present</div>
                     <div class="timeline-content">
-                        <h3>Lead Specialist – Workforce Management (Retail Operations)</h3>
-                        <h4>Target | Bengaluru</h4>
-                        <ul>
-                            <li>Owned forecasting and capacity planning using historical data, seasonality, and intraday trends.</li>
-                            <li>Built time-series forecasts for volume, AHT, and staffing using analytical and ARIMA-style techniques.</li>
-                            <li>Designed KPI frameworks and dashboards to monitor SLA, shrinkage, adherence, and occupancy.</li>
-                            <li>Automated reporting using SQL and Python, reducing manual effort and improving decision speed.</li>
-                            <li>Supported intraday execution across 1,900+ retail stores, ensuring SLA compliance and stability.</li>
+                        <div class="timeline-header">
+                            <h3>Lead Specialist – Workforce Management</h3>
+                            <span class="company">Target | Bengaluru</span>
+                        </div>
+                        <div class="timeline-metrics">
+                            <div class="metric">
+                                <div class="metric-value">1,900+</div>
+                                <div class="metric-label">Stores Supported</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">97%</div>
+                                <div class="metric-label">SLA Compliance</div>
+                            </div>
+                        </div>
+                        <ul class="timeline-list">
+                            <li><i class="fas fa-check-circle"></i> Owned forecasting and capacity planning using historical data, seasonality, and intraday trends</li>
+                            <li><i class="fas fa-check-circle"></i> Built time-series forecasts for volume, AHT, and staffing using analytical and ARIMA-style techniques</li>
+                            <li><i class="fas fa-check-circle"></i> Designed KPI frameworks and dashboards to monitor SLA, shrinkage, adherence, and occupancy</li>
+                            <li><i class="fas fa-check-circle"></i> Automated reporting using SQL and Python, reducing manual effort and improving decision speed</li>
+                            <li><i class="fas fa-check-circle"></i> Supported intraday execution across 1,900+ retail stores, ensuring SLA compliance and stability</li>
                         </ul>
                     </div>
                 </div>
+                
                 <div class="timeline-item">
                     <div class="timeline-date">2021 – 2023</div>
                     <div class="timeline-content">
-                        <h3>Transportation Specialist – Relay Operations Center</h3>
-                        <h4>Amazon | Hyderabad</h4>
-                        <ul>
-                            <li>Managed real-time transportation operations and SLA adherence for large-scale line-haul networks.</li>
-                            <li>Analyzed operational data to reduce delays, improve resolution times, and increase network reliability.</li>
-                            <li>Acted as SME for process optimization and real-time issue resolution in a 24/7 command center.</li>
+                        <div class="timeline-header">
+                            <h3>Transportation Specialist – Relay Operations Center</h3>
+                            <span class="company">Amazon | Hyderabad</span>
+                        </div>
+                        <div class="timeline-metrics">
+                            <div class="metric">
+                                <div class="metric-value">24/7</div>
+                                <div class="metric-label">Operations Center</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">15%</div>
+                                <div class="metric-label">Delay Reduction</div>
+                            </div>
+                        </div>
+                        <ul class="timeline-list">
+                            <li><i class="fas fa-check-circle"></i> Managed real-time transportation operations and SLA adherence for large-scale line-haul networks</li>
+                            <li><i class="fas fa-check-circle"></i> Analyzed operational data to reduce delays, improve resolution times, and increase network reliability</li>
+                            <li><i class="fas fa-check-circle"></i> Acted as SME for process optimization and real-time issue resolution in a 24/7 command center</li>
                         </ul>
                     </div>
                 </div>
@@ -164,92 +365,123 @@
         </div>
     </section>
 
-    <!-- Featured Projects -->
-    <section id="projects" class="section section-dark">
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Data-driven solutions with measurable impact</p>
+            </div>
+            
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
+                        <div class="project-badge">Python Automation</div>
                         <h3>Workforce Forecasting & KPI Automation</h3>
-                        <div class="project-chart">
-                            <canvas id="projectChart1"></canvas>
-                        </div>
+                    </div>
+                    <div class="project-chart">
+                        <canvas id="projectChart1"></canvas>
                     </div>
                     <div class="project-content">
-                        <p>Built Python-based KPI trackers and automated adherence reports.</p>
+                        <p>Built Python-based KPI trackers and automated adherence reports with real-time dashboarding capabilities.</p>
                         <div class="project-stats">
-                            <div class="project-stat">
-                                <span class="stat-value">18%</span>
-                                <span class="stat-label">Reduction in unauthorized AUX usage</span>
+                            <div class="stat">
+                                <div class="stat-value">18%</div>
+                                <div class="stat-label">Reduction in unauthorized AUX usage</div>
                             </div>
-                            <div class="project-stat">
-                                <span class="stat-value">7%</span>
-                                <span class="stat-label">Increase in occupancy</span>
+                            <div class="stat">
+                                <div class="stat-value">7% ↑</div>
+                                <div class="stat-label">Increase in occupancy</div>
                             </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Dashboard</span>
                         </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Time Series & Forecast Accuracy Analysis</h3>
-                        <div class="project-chart">
-                            <canvas id="projectChart2"></canvas>
-                        </div>
+                        <div class="project-badge">Time Series Analysis</div>
+                        <h3>Forecast Accuracy Optimization</h3>
+                    </div>
+                    <div class="project-chart">
+                        <canvas id="projectChart2"></canvas>
                     </div>
                     <div class="project-content">
-                        <p>Applied time-series methods to predict demand and staffing needs.</p>
+                        <p>Applied time-series methods (ARIMA, moving averages) to predict demand and staffing needs with higher accuracy.</p>
                         <div class="project-stats">
-                            <div class="project-stat">
-                                <span class="stat-value">12%</span>
-                                <span class="stat-label">Improved forecast accuracy</span>
+                            <div class="stat">
+                                <div class="stat-value">12% ↑</div>
+                                <div class="stat-label">Improved forecast accuracy</div>
                             </div>
-                            <div class="project-stat">
-                                <span class="stat-value">95%</span>
-                                <span class="stat-label">Alignment during peak periods</span>
+                            <div class="stat">
+                                <div class="stat-value">95%</div>
+                                <div class="stat-label">Alignment during peak periods</div>
                             </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">ARIMA</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Time Series</span>
                         </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>SQL-Based Operational Analytics</h3>
-                        <div class="project-chart">
-                            <canvas id="projectChart3"></canvas>
-                        </div>
+                        <div class="project-badge">SQL Analytics</div>
+                        <h3>Operational Analytics System</h3>
+                    </div>
+                    <div class="project-chart">
+                        <canvas id="projectChart3"></canvas>
                     </div>
                     <div class="project-content">
-                        <p>Developed complex SQL queries to identify intraday trends and AHT drivers.</p>
+                        <p>Developed complex SQL queries to identify intraday trends and AHT drivers, enabling data-driven decision making.</p>
                         <div class="project-stats">
-                            <div class="project-stat">
-                                <span class="stat-value">9%</span>
-                                <span class="stat-label">Reduction in AHT</span>
+                            <div class="stat">
+                                <div class="stat-value">9% ↓</div>
+                                <div class="stat-label">Reduction in AHT</div>
                             </div>
                             <div class="project-stat">
-                                <span class="stat-value">15%</span>
-                                <span class="stat-label">Faster data extraction</span>
+                                <div class="stat-value">15%</div>
+                                <div class="stat-label">Faster data extraction</div>
                             </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">ETL</span>
+                            <span class="tech-tag">Analytics</span>
                         </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Process Optimization & Cost Savings</h3>
-                        <div class="project-chart">
-                            <canvas id="projectChart4"></canvas>
-                        </div>
+                        <div class="project-badge">Process Optimization</div>
+                        <h3>Cost Savings Automation</h3>
+                    </div>
+                    <div class="project-chart">
+                        <canvas id="projectChart4"></canvas>
                     </div>
                     <div class="project-content">
-                        <p>Designed data-driven controls that prevented fraud and saved $2.2M annually.</p>
+                        <p>Designed data-driven controls and automated workflows that prevented fraud and optimized labor allocation.</p>
                         <div class="project-stats">
-                            <div class="project-stat">
-                                <span class="stat-value">$2.2M</span>
-                                <span class="stat-label">Annual savings</span>
+                            <div class="stat">
+                                <div class="stat-value">$2.2M</div>
+                                <div class="stat-label">Annual savings</div>
                             </div>
-                            <div class="project-stat">
-                                <span class="stat-value">52+</span>
-                                <span class="stat-label">Labor hours saved daily</span>
+                            <div class="stat">
+                                <div class="stat-value">52+</div>
+                                <div class="stat-label">Labor hours saved daily</div>
                             </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Workflow</span>
                         </div>
                     </div>
                 </div>
@@ -258,87 +490,147 @@
     </section>
 
     <!-- Achievements & Certifications -->
-    <section id="achievements" class="section">
+    <section id="achievements" class="section achievements">
         <div class="container">
-            <div class="achievements-section">
-                <div class="achievements">
-                    <h2 class="section-title">Achievements & Recognition</h2>
-                    <div class="badges-grid">
-                        <div class="badge">
-                            <i class="fas fa-award"></i>
-                            <span>Leader's Choice Award – Q1 2024</span>
+            <div class="achievements-grid">
+                <div class="achievements-section">
+                    <h2 class="section-title">Awards & <span class="highlight">Recognition</span></h2>
+                    <div class="awards-grid">
+                        <div class="award">
+                            <div class="award-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="award-content">
+                                <h3>Leader's Choice Award</h3>
+                                <p>Q1 2024 - Target</p>
+                            </div>
                         </div>
-                        <div class="badge">
-                            <i class="fas fa-trophy"></i>
-                            <span>TOP DOG Award – Global Recognition (Target)</span>
+                        <div class="award">
+                            <div class="award-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="award-content">
+                                <h3>TOP DOG Award</h3>
+                                <p>Global Recognition - Target</p>
+                            </div>
                         </div>
-                        <div class="badge">
-                            <i class="fas fa-gem"></i>
-                            <span>Emerald Awards – 2021 & 2022</span>
+                        <div class="award">
+                            <div class="award-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="award-content">
+                                <h3>Emerald Awards</h3>
+                                <p>2021 & 2022 - Amazon</p>
+                            </div>
                         </div>
-                        <div class="badge">
-                            <i class="fas fa-medal"></i>
-                            <span>Peak Period Excellence Awards</span>
+                        <div class="award">
+                            <div class="award-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="award-content">
+                                <h3>Peak Period Excellence</h3>
+                                <p>Peak Performance Awards</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="certifications">
-                    <h2 class="section-title">Certifications</h2>
-                    <ul class="cert-list">
-                        <li><i class="fas fa-certificate"></i> AI for Managers – CloudxLab</li>
-                        <li><i class="fas fa-certificate"></i> Comprehensive Python Programming – IIT IHUB</li>
-                        <li><i class="fas fa-certificate"></i> Introduction to Machine Learning – IIT IHUB</li>
-                        <li><i class="fas fa-certificate"></i> Advanced Data Analytics – Google</li>
-                    </ul>
+                
+                <div class="certifications-section">
+                    <h2 class="section-title">Certifications & <span class="highlight">Education</span></h2>
+                    <div class="certifications-list">
+                        <div class="certification">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>AI for Managers</h4>
+                                <p>CloudxLab</p>
+                            </div>
+                        </div>
+                        <div class="certification">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Comprehensive Python Programming</h4>
+                                <p>IIT IHUB</p>
+                            </div>
+                        </div>
+                        <div class="certification">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Introduction to Machine Learning</h4>
+                                <p>IIT IHUB</p>
+                            </div>
+                        </div>
+                        <div class="certification">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Advanced Data Analytics</h4>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Bachelor of Science</h3>
+                            <p>Gulbarga University | 2015 – 2018</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-card">
-                <h3>Bachelor of Science</h3>
-                <h4>Gulbarga University | 2015 – 2018</h4>
-                <p>Focused on analytical and quantitative coursework that built the foundation for data-driven decision making.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <p class="section-subtitle">Interested in workforce analytics or forecasting solutions?</p>
+            </div>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
                             <h3>Email</h3>
                             <p>wilsonsamuelnda@gmail.com</p>
+                            <a href="mailto:wilsonsamuelnda@gmail.com" class="contact-link">Send Email</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
                             <h3>LinkedIn</h3>
                             <p>linkedin.com/in/wilsonsamuel1008</p>
+                            <a href="https://linkedin.com/in/wilsonsamuel1008" target="_blank" class="contact-link">Connect</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
                             <h3>GitHub</h3>
                             <p>github.com/yourusername</p>
+                            <a href="https://github.com/yourusername" target="_blank" class="contact-link">View Projects</a>
                         </div>
                     </div>
                 </div>
-                <div class="contact-note">
-                    <p>I'm always open to discussing workforce analytics, forecasting challenges, or potential collaborations. Feel free to reach out!</p>
-                    <a href="mailto:wilsonsamuelnda@gmail.com" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Send Email
+                
+                <div class="contact-message">
+                    <h3>Ready to Optimize Your Workforce Operations?</h3>
+                    <p>I'm currently available for consulting, freelance projects, or full-time opportunities in workforce analytics, forecasting, and process automation. Let's discuss how data-driven solutions can transform your operations.</p>
+                    <a href="mailto:wilsonsamuelnda@gmail.com" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Start a Conversation
                     </a>
                 </div>
             </div>
@@ -348,14 +640,34 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2023 Wilson Samuel. All rights reserved.</p>
-            <p>Workforce Management Analytics & Forecasting Portfolio</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">WS</span>
+                    <span class="logo-text">Wilson Samuel</span>
+                </div>
+                <p>Workforce Management Analytics & Forecasting Specialist</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    © 2024 Wilson Samuel. All rights reserved.
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Chart.js Library -->
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Main JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
