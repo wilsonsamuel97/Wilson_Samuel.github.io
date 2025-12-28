@@ -19,7 +19,7 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
     color: var(--dark);
     cursor: none;
     overflow-x: hidden;
@@ -122,6 +122,7 @@ nav a:hover {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #fff;
 }
 
 .college-info {
@@ -131,6 +132,7 @@ nav a:hover {
     gap: 1rem;
     margin: 1rem 0;
     font-size: 1.2rem;
+    color: #fff;
 }
 
 .college-icon {
@@ -143,7 +145,7 @@ nav a:hover {
 
 .tagline {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #e2e8f0;
     margin: 1.5rem 0;
 }
 
@@ -169,7 +171,7 @@ nav a:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: #fff;
 }
 
@@ -182,7 +184,7 @@ nav a:hover {
 
 .btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.5);
 }
 
 /* Sections */
