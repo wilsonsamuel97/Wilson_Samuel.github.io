@@ -1,133 +1,70 @@
-// Theme Toggle
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon = themeToggle.querySelector('i');
+// Custom Cursor
+const cursor = document.querySelector('.cursor');
+let mouseX = 0, mouseY = 0;
+let cursorX = 0, cursorY = 0;
 
-// Check for saved theme
-const savedTheme = localStorage.getItem('theme') || 'light';
-
-// Apply saved theme
-if (savedTheme === 'dark') {
-    document.body.classList.add('dark-theme');
-    themeIcon.classList.remove('fa-moon');
-    themeIcon.classList.add('fa-sun');
-}
-
-// Theme toggle event
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    
-    if (document.body.classList.contains('dark-theme')) {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-        localStorage.setItem('theme', 'light');
-    }
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 });
 
-// Mobile Menu Toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-    
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
-    
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (event) => {
-        if (!event.target.closest('.navbar') && navLinks.classList.contains('active')) {
-            navLinks.classList.remove('active');
-        }
-    });
+function animateCursor() {
+    cursorX += (mouseX - cursorX) * 0.2;
+    cursorY += (mouseY - cursorY) * 0.2;
+    cursor.style.left = cursorX + 'px';
+    cursor.style.top = cursorY + 'px';
+    requestAnimationFrame(animateCursor);
 }
+animateCursor();
 
-// Resume Button
-const resumeBtn = document.getElementById('resumeBtn');
-if (resumeBtn) {
-    resumeBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        alert('Resume download would be implemented here. For now, please email wilsonsamuelnda@gmail.com for a copy.');
-    });
-}
+// Cursor Expand Effect
+const hoverElements = document.querySelectorAll('.btn, .skill-card, .project-card, .magnetic, a');
+hoverElements.forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('expand'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('expand'));
+});
 
-// Back to Top Button
-const backToTop = document.getElementById('backToTop');
-
-if (backToTop) {
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
+// Magnetic Effect
+const magneticElements = document.querySelectorAll('.magnetic');
+magneticElements.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        el.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
     });
 
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-}
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#' || targetId === '#home') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            e.preventDefault();
-            
-            // Close mobile menu if open
-            if (navLinks && navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-            }
-            
-            const offsetTop = targetElement.offsetTop - 80;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
+    el.addEventListener('mouseleave', () => {
+        el.style.transform = 'translate(0, 0)';
     });
 });
 
-// Intersection Observer for animations
+// Scroll Animations
+const sections = document.querySelectorAll('section');
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px -100px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+            entry.target.classList.add('visible');
         }
     });
 }, observerOptions);
 
-// Observe elements for animation
-document.querySelectorAll('.timeline-item, .project-card, .category, .kpi-card').forEach(el => {
-    observer.observe(el);
+sections.forEach(section => {
+    observer.observe(section);
 });
 
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    // Add scroll animation classes to elements
-    const animatedElements = document.querySelectorAll('.timeline-item, .project-card, .category, .kpi-card');
-    animatedElements.forEach(el => {
-        el.classList.add('animate__animated');
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     });
 });
