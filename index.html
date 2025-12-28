@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wilson Samuel - Data Science Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- Custom Cursor -->
     <div class="cursor"></div>
 
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -21,119 +29,160 @@
         </ul>
     </nav>
 
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <!-- Change to .PNG if your file is wilson.PNG, or .jpg if wilson.jpg -->
-            <img src="images/wilson.PNG" class="profile-img" alt="Wilson Samuel">
-            
+
+            <img src="images/wilson.PNG" alt="Wilson Samuel" class="profile-img">
+
             <h1>Wilson Samuel</h1>
-            
-            <p class="tagline">Workforce Analytics • Forecasting • Data Science • Automation</p>
-            
+
+            <p class="tagline">
+                Workforce Analytics • Forecasting • Data Science • Automation
+            </p>
+
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary magnetic">View Projects</a>
                 <a href="#" class="btn btn-secondary magnetic">Download Resume</a>
                 <a href="#contact" class="btn btn-secondary magnetic">Contact Me</a>
             </div>
+
         </div>
     </section>
 
+    <!-- About -->
     <section id="about">
         <h2 class="section-title">About Me</h2>
+
         <div class="about-content">
-            <p>I am a Data Science professional specializing in Workforce Management with expertise in advanced forecasting techniques, time series analysis, and ARIMA modeling. My experience spans across leading companies like Target and Amazon, where I've leveraged data-driven insights to optimize operations and improve business outcomes.</p>
+            <p>
+                I am a Data Science professional specializing in Workforce Management with expertise in
+                forecasting, time series analysis, and ARIMA modeling. I have worked with global
+                organizations like Target and Amazon to deliver data-driven operational improvements.
+            </p>
             <br>
-            <p>I excel at transforming complex datasets into actionable KPIs and metrics, utilizing SQL and Python for automation and reporting. My passion lies in building predictive models that drive strategic decision-making and operational excellence in workforce analytics.</p>
+            <p>
+                I specialize in automating reporting pipelines, building predictive models, and
+                translating complex datasets into actionable insights using Python, SQL, and BI tools.
+            </p>
         </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills">
         <h2 class="section-title">Skills & Expertise</h2>
+
         <div class="skills-grid">
+
             <div class="skill-card magnetic">
                 <i class="fab fa-python skill-icon python"></i>
                 <div class="skill-name">Python</div>
             </div>
+
             <div class="skill-card magnetic">
                 <i class="fas fa-database skill-icon sql"></i>
                 <div class="skill-name">SQL</div>
             </div>
+
             <div class="skill-card magnetic">
                 <i class="fas fa-chart-bar skill-icon powerbi"></i>
                 <div class="skill-name">Power BI</div>
             </div>
+
             <div class="skill-card magnetic">
                 <i class="fas fa-chart-line skill-icon timeseries"></i>
                 <div class="skill-name">Time Series Analysis</div>
             </div>
+
             <div class="skill-card magnetic">
                 <i class="fas fa-brain skill-icon forecast"></i>
                 <div class="skill-name">Forecasting & ARIMA</div>
             </div>
+
             <div class="skill-card magnetic">
                 <i class="fas fa-robot skill-icon automation"></i>
                 <div class="skill-name">Automation & Reporting</div>
             </div>
+
         </div>
     </section>
 
+    <!-- Experience -->
     <section id="experience">
         <h2 class="section-title">Professional Experience</h2>
+
         <div class="experience-grid">
+
             <div class="exp-card magnetic">
                 <div class="exp-header">
-                    <!-- Target logo -->
                     <img src="images/target-logo.PNG" class="company-logo" alt="Target">
                     <div>
                         <div class="exp-title">Workforce Management Lead</div>
                         <div class="exp-company">Target</div>
                     </div>
                 </div>
+
                 <div class="exp-description">
-                    Led workforce forecasting initiatives using advanced time series models and ARIMA. Developed comprehensive KPI dashboards and automated reporting systems using SQL and Python. Optimized staffing strategies resulting in improved operational efficiency and cost savings.
+                    Led workforce forecasting using ARIMA and time-series models.
+                    Built automated KPI dashboards with Python and SQL, improving
+                    efficiency and reducing staffing costs.
                 </div>
             </div>
 
             <div class="exp-card magnetic">
                 <div class="exp-header">
-                    <!-- Amazon logo -->
                     <img src="images/amazon-logo.PNG" class="company-logo" alt="Amazon">
                     <div>
                         <div class="exp-title">Operations Analyst</div>
                         <div class="exp-company">Amazon</div>
                     </div>
                 </div>
+
                 <div class="exp-description">
-                    Managed real-time analytics for operational excellence. Implemented data-driven solutions for workforce optimization. Created automated dashboards for monitoring key performance indicators and supporting strategic decision-making across multiple teams.
+                    Delivered real-time operational analytics and automated reporting.
+                    Supported decision-making through data-driven workforce insights.
                 </div>
             </div>
+
         </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects">
         <h2 class="section-title">Featured Projects</h2>
+
         <div class="projects-grid">
+
             <div class="project-card magnetic">
                 <div class="project-content">
                     <i class="fas fa-chart-area project-icon"></i>
                     <h3 class="project-title">Workforce Forecasting Models</h3>
-                    <p class="project-desc">Developed sophisticated time series forecasting models using ARIMA and machine learning techniques to predict workforce demand with 95% accuracy, reducing staffing costs by 20%.</p>
+                    <p class="project-desc">
+                        Built ARIMA-based forecasting models achieving 95% accuracy
+                        and reducing staffing costs by 20%.
+                    </p>
                 </div>
             </div>
 
             <div class="project-card magnetic">
                 <div class="project-content">
                     <i class="fas fa-toggle-on project-icon"></i>
-                    <h3 class="project-title">Automation of AUX Toggling Reports</h3>
-                    <p class="project-desc">Automated auxiliary time tracking and reporting system using Python, eliminating manual data entry and reducing processing time from 4 hours to 15 minutes daily.</p>
+                    <h3 class="project-title">AUX Toggling Automation</h3>
+                    <p class="project-desc">
+                        Automated AUX tracking reports using Python,
+                        reducing processing time from hours to minutes.
+                    </p>
                 </div>
             </div>
 
             <div class="project-card magnetic">
                 <div class="project-content">
                     <i class="fas fa-cogs project-icon"></i>
-                    <h3 class="project-title">Python KPI Automation Dashboard</h3>
-                    <p class="project-desc">Built real-time KPI tracking system using Python and Power BI, reducing manual reporting time by 80% and providing instant insights to stakeholders across operations teams.</p>
+                    <h3 class="project-title">Python KPI Automation</h3>
+                    <p class="project-desc">
+                        Developed real-time KPI dashboards reducing manual reporting
+                        workload by 80%.
+                    </p>
                 </div>
             </div>
 
@@ -141,50 +190,53 @@
                 <div class="project-content">
                     <i class="fas fa-database project-icon"></i>
                     <h3 class="project-title">SQL Analytics Dashboards</h3>
-                    <p class="project-desc">Designed comprehensive SQL-based analytics dashboards for workforce metrics, enabling data-driven decision making and improving operational visibility by 60%.</p>
+                    <p class="project-desc">
+                        Designed SQL-driven dashboards improving operational visibility
+                        by 60%.
+                    </p>
                 </div>
             </div>
 
-            <div class="project-card magnetic">
-                <div class="project-content">
-                    <i class="fas fa-users project-icon"></i>
-                    <h3 class="project-title">Workforce Optimization Analytics</h3>
-                    <p class="project-desc">Created predictive analytics models for workforce scheduling optimization, resulting in 15% improvement in resource allocation and enhanced employee satisfaction scores.</p>
-                </div>
-            </div>
-
-            <div class="project-card magnetic">
-                <div class="project-content">
-                    <i class="fas fa-clock project-icon"></i>
-                    <h3 class="project-title">Real-Time Capacity Planning Tool</h3>
-                    <p class="project-desc">Developed real-time capacity planning system using Python and SQL, providing dynamic staffing recommendations based on historical patterns and current demand trends.</p>
-                </div>
-            </div>
         </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
         <h2 class="section-title">Get In Touch</h2>
+
         <div class="contact-grid">
+
             <div class="contact-item">
-                <i class="fas fa-envelope contact-icon"></i>
-                <a href="mailto:wilson@example.com" class="contact-link">wilson@example.com</a>
+                <i class="fas fa-envelope contact-icon email-icon"></i>
+                <a href="mailto:wilsonsamuelnda@gmail.com" class="contact-link">
+                    wilsonsamuelnda@gmail.com
+                </a>
             </div>
+
             <div class="contact-item">
-                <i class="fab fa-linkedin contact-icon"></i>
-                <a href="https://linkedin.com/in/wilsonsamuel" target="_blank" class="contact-link">LinkedIn</a>
+                <i class="fab fa-linkedin contact-icon linkedin-icon"></i>
+                <a href="https://linkedin.com/in/wilsonsamuel" target="_blank" class="contact-link">
+                    LinkedIn
+                </a>
             </div>
+
             <div class="contact-item">
-                <i class="fab fa-github contact-icon"></i>
-                <a href="https://github.com/wilsonsamuel" target="_blank" class="contact-link">GitHub</a>
+                <i class="fab fa-github contact-icon github-icon"></i>
+                <a href="https://github.com/wilsonsamuel" target="_blank" class="contact-link">
+                    GitHub
+                </a>
             </div>
+
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Wilson Samuel. All rights reserved.</p>
+        <p>© 2024 Wilson Samuel. All rights reserved.</p>
     </footer>
 
+    <!-- JS -->
     <script src="script.js"></script>
+
 </body>
 </html>
